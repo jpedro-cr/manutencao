@@ -1,4 +1,13 @@
 package com.jpedro_cr.manutencao.dtos;
 
-public record CriarChamadoRequest() {
+import java.time.LocalDateTime;
+
+public record CriarChamadoRequest(
+        String titulo,
+        String descricao,
+        String local,
+        long prioridadeId,
+        long statusId,
+        LocalDateTime criadoEm
+) {
 }
